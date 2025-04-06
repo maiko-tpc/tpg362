@@ -127,7 +127,7 @@ int main(int argc, char** argv){
     fprintf(output, "  ");
     
     
-    // Send Command for CH1
+    // Send Command for CH2
     res=send(sd, "PR2\r\n", 5, 0);
 
     // Get acknowledge
