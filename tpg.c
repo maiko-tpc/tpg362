@@ -15,7 +15,9 @@
 #include <unistd.h>
 #include <time.h>
 
-const int wait_time=10000000; // measure interval in us
+//const int wait_time=10000000; // measure interval in us
+const int wait_time_sec=10; // measure interval in s
+
 
 int main(int argc, char** argv){
 
@@ -146,7 +148,8 @@ int main(int argc, char** argv){
     fclose(output);
     
     // Wait for the next measurement
-    usleep(wait_time);
+    //usleep(wait_time);
+    sleep(wait_time_sec);
   }
   
   close(sd);
